@@ -1,0 +1,1 @@
+module.exports = require("/home/szymon/Desktop/RPM-TECH/src/utils/typography")
