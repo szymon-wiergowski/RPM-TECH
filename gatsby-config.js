@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    title: `To jest tytuł z gatsby-config`,
+  },
   plugins: [
     `gatsby-plugin-emotion`,
     {
