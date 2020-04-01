@@ -43,7 +43,6 @@ export default ({ children }) => {
       >
         About 
       </Link>
-      <span>|</span>
       <Link
         to={`/my-files/`}
         css={css`

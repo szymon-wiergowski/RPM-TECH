@@ -3,7 +3,11 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 export default ({ data }) => {
-  console.log(data)
+
+  const allFiles = data.allFile.edges;
+
+  console.log(allFiles)
+
   return (
     <Layout>
       <div>
@@ -18,7 +22,7 @@ export default ({ data }) => {
             </tr>
           </thead>
           <tbody>
-            {data.allFile.edges.map(({ node }, index) => (
+            {allFiles.map(({ node }, index) => (
               <tr key={index}>
                 <td>{node.relativePath}</td>
                 <td>{node.prettySize}</td>
