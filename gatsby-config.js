@@ -10,6 +10,7 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
+    `gatsby-plugin-material-ui`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
     {
