@@ -11,6 +11,11 @@ const IndexPage = () => (
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
+    <p>
+      For what it's worth I had this same issue and it came down to a
+      case-sensitivity issue. It worked fine on my mac but failed on Netlify's
+      servers because of some of the component names:
+    </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
