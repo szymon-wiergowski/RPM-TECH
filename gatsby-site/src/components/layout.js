@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          background: `rebeccapurple`,
+          background: `grey`,
           margin: `0 auto`,
           maxWidth: 960,
         }}
