@@ -19,9 +19,7 @@ const Header = ({ siteTitle }) => {
       <div className={styles.container}>
         <div className={styles.brand}>
           <img src={logo} alt="logo" className={styles.brand_logo} />
-          <Link to="/" className={styles.brand_name}>
-            <h1>{siteTitle}</h1>
-          </Link>
+          <h1 className={styles.brand_name}>{siteTitle}</h1>
         </div>
         <div className={styles.links} onClick={() => toggleActiveClass()}>
           <Link value={active} className={styles.links_item} to="/">

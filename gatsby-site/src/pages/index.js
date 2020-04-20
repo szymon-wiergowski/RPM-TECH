@@ -7,17 +7,27 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <p>
-      For what it's worth I had this same issue and it came down to a
-      case-sensitivity issue. It worked fine on my mac but failed on Netlify's
-      servers because of some of the component names:
-    </p>
     <div>
       <Image />
     </div>
+    <h1>O firmie</h1>
+    <p>
+      Kancelaria Majątkowa została założona w 2017 r. przez rzeczoznawcę
+      majątkowego Tomasza Rzóska, posiadającego uprawnienia zawodowe numer 7159
+      w zakresie szacowania nieruchomości.
+    </p>
+    <p>
+      Świadczymy usługi w zakresie wyceny nieruchomości oraz doradztwa
+      majątkowego, skierowane do klientów indywidualnych, przedsiębiorstw oraz
+      instytucji z sektora finansowego i publicznego. Zapewniamy profesjonalną i
+      kompleksową obsługę klienta, terminowość oraz rzetelne wykonanie zlecenia,
+      zgodnie z obowiązującymi przepisami prawa i standardami zawodowymi
+      rzeczoznawców majątkowych.
+    </p>
+    <p>
+      Właściciel firmy jest członkiem Pomorskiego Towarzystwa Rzeczoznawców
+      Majątkowych.
+    </p>
   </Layout>
 )
 

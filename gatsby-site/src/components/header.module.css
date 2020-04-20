@@ -1,6 +1,6 @@
 .container {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 1200px;
     padding: 1.2rem 1rem;
     display: flex;
     align-items: center;
@@ -9,8 +9,29 @@
 }
 
 a {
+    color: #2B4162;
+    text-transform: uppercase;
     text-decoration: none;
-    color: #000000;
+    display: inline-block;
+    position: relative;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 1rem;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #2B4162;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
 }
 
 .brand {
@@ -18,23 +39,32 @@ a {
 }
 
 .brand_logo {
-    width: 6rem;
+    width: 4.5rem;
     border-radius: 50%;
     margin: 0;
 }
 
 .brand_name {
-    font-size: 2rem;
-    margin: 2rem 0 0 1rem;
+    margin: 0.4rem 0 0 1rem;
     align-self: center;
 }
 
 .links {
-    margin-left: 1rem;
     align-self: center;
     display: flex;
+    position: relative;
 }
 
+
 .links_item {
-    margin: 2rem 0 0 1rem;
+    margin: 2rem 0 0 2rem;
+}
+
+@media screen and (max-width: 500px) {
+    ul {
+        margin-top: 40px;
+    }
+    .links {
+       flex-direction: column;
+    }
 }

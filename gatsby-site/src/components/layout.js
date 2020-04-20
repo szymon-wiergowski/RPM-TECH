@@ -2,6 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import styles from "./layout.module.css"
+
 import Header from "./header"
 
 const Layout = ({ children }) => {
@@ -16,13 +18,12 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className={styles.page}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          background: `grey`,
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 1200,
         }}
       >
         <main>{children}</main>
@@ -32,7 +33,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 
