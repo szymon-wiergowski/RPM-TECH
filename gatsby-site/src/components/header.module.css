@@ -16,7 +16,11 @@ a {
     position: relative;
 }
 
-a:after {
+.links_item {
+    margin: 2rem 0 0 2rem;
+}
+
+.links_item:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 1rem;
     content: "";
@@ -29,7 +33,7 @@ a:after {
     width: 0;
 }
 
-a:hover:after {
+.links_item:hover:after {
     width: 100%;
     left: 0;
 }
@@ -47,6 +51,7 @@ a:hover:after {
 .brand_name {
     margin: 0.4rem 0 0 1rem;
     align-self: center;
+    color: #2B4162;
 }
 
 .links {
@@ -56,9 +61,7 @@ a:hover:after {
 }
 
 
-.links_item {
-    margin: 2rem 0 0 2rem;
-}
+
 
 @media screen and (max-width: 500px) {
     ul {
