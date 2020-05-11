@@ -9,22 +9,20 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 5rem 1.4rem 3rem;
+    padding: 5rem 0 2rem;
     width: 1200px;
 }
 
 a {
     text-transform: uppercase;
     text-decoration: none;
-    display: inline-block;
-    position: relative;
 }
 
 .links {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 15%;
+    width: 10%;
 }
 
 .links_item {
@@ -54,12 +52,12 @@ a {
 }
 
 .brand_description {
-    width: 40%;
+    width: 50%;
 }
 
 .address {
     font-style: normal;
-    width: 25%;
+    width: 17%;
 }
 
 .name {
@@ -78,13 +76,9 @@ a {
 }
 
 .end {
-    /* position: absolute;
-    bottom: -1rem; */
     width: 100%;
-    /* left: 50%;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); */
+    text-align: center;
+    margin-top: 1.4rem;
 }
 
 @media only screen and (max-width: 600px) {
