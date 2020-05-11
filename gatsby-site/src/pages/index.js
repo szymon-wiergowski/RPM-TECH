@@ -12,7 +12,7 @@ const IndexPage = () => (
     </div>
     <div
       style={{
-        margin: `0 auto`,
+        margin: `2rem auto`,
         maxWidth: 1200,
       }}
     >
