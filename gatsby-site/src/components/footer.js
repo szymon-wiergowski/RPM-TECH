@@ -28,7 +28,7 @@ const Footer = ({ siteTitle }) => {
           <p>
             Jestesmy generalnym dystrybutorem amerykańskiego koncernu Quaker
             Chemical i specjalizujemy się w optymalizacji procesów
-            produkcyjnych.
+            produkcyjnych
           </p>
           <p>
             Nasza oferta skierowana jest przede wszystkim do zakładów

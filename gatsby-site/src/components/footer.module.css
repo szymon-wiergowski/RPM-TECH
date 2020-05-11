@@ -3,13 +3,13 @@
     background-color: #2B4162;
     display: flex;
     justify-content: space-around;
-    position: relative;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 5rem 0 6rem;
+    flex-wrap: wrap;
+    padding: 5rem 1.4rem 3rem;
     width: 1200px;
 }
 
@@ -23,11 +23,16 @@ a {
 .links {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    width: 15%;
 }
 
 .links_item {
     color: #889696;
+}
+
+.links_item:hover {
+    color: white;
 }
 
 .links_item:after {
@@ -38,7 +43,7 @@ a {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #889696;
+    background: white;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -54,6 +59,7 @@ a {
 
 .address {
     font-style: normal;
+    width: 25%;
 }
 
 .name {
@@ -72,10 +78,39 @@ a {
 }
 
 .end {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+    /* position: absolute;
+    bottom: -1rem; */
+    width: 100%;
+    /* left: 50%;
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 3rem 3rem 0;
+        max-width: 600px;
+        font-size: small;
+        align-items: flex-start;
+    }
+    h5 {
+        margin-top: 1.4rem;
+    }
+    .brand_description {
+        width: auto;
+    }
+    .links {
+        width: auto;
+    }
+    .links_item {
+        font-size: 100px;
+    }
+    .address {
+        width: auto;
+    }
+    .end {
+        margin: 2rem 0;
+    }
 }

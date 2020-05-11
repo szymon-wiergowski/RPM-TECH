@@ -20,15 +20,10 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.page}>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1200,
-        }}
-      >
+      <div>
         <main>{children}</main>
       </div>
-      <Footer siteTitle={data.site.siteMetadata.title}/>
+      <Footer siteTitle={data.site.siteMetadata.title} />
     </div>
   )
 }
