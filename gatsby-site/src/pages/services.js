@@ -1,35 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-const Image = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "services.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
 
 const Services = () => (
   <Layout>
     <SEO title="Services" />
-    <h1>Hi from the Services page</h1>
-    <p>Welcome to page Services</p>
-    <Image />
-    <Link to="/">Go back to the homepage</Link>
+    <div
+      style={{
+        backgroundColor: "white",
+        margin: `2rem auto`,
+        padding: "3rem",
+        minHeight: 250,
+        textAlign: "center",
+      }}
+    >
+      <h1>Usługi</h1>
+      <p>Witamy na podstronie usług</p>
+      <Link to="/">Wróć do strony startowej</Link>
+    </div>
   </Layout>
 )
 
