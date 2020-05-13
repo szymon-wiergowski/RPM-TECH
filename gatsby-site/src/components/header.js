@@ -1,9 +1,9 @@
-import { Link } from "gatsby"
-import React, { useState } from "react"
+import { Link } from "gatsby";
+import React, { useState } from "react";
 
-import styles from "./header.module.css"
+import styles from "./header.module.css";
 
-import logo from "../images/logo-rpm-tech.svg"
+import logo from "../images/logo-rpm-tech.svg";
 
 const Header = ({ siteTitle }) => {
   const [active, setActive] = useState(false)
