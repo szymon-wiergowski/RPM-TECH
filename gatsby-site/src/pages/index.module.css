@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     margin: 0 1.4rem;
     padding: 2rem 0 2rem;
-    width: 1200px;
+    max-width: 1200px;
 }
 
 p:last-child {
