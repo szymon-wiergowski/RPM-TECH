@@ -19,10 +19,10 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className={styles.page}>
+    <div>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
-        <main>{children}</main>
+        <main className={styles.container}>{children}</main>
       </div>
       <Footer siteTitle={data.site.siteMetadata.title} />
     </div>
