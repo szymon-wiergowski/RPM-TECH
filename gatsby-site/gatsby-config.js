@@ -33,6 +33,13 @@ module.exports = {
         icon: `src/images/logo-rpm-tech.svg`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/bg`, // wherever background images are stored
+      },
+    },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
